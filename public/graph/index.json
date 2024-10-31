@@ -1,0 +1,15 @@
+{
+  "graph": {
+    "/posts/24-steps-for-startup-sanity/": {
+      "in": [],
+      "out": []
+    }
+  },
+  "pages": {
+    "/posts/24-steps-for-startup-sanity/": {
+      "permalink": "/posts/24-steps-for-startup-sanity/",
+      "section": "posts",
+      "title": "24 Steps for Startup Sanity"
+    }
+  }
+}
