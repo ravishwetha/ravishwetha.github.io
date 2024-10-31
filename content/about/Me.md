@@ -6,6 +6,16 @@ I mainly write on **Artificial Intelligence** & **Entrepreneurship** but I try n
 ## Reality Level 0 - Math, Science & Nature
 
 1. Artificial Intelligence
+    a. AI Agents
+    b. Artificial General Intelligence
+    c. Computer Vision
+    d. Generative AI
+    e. Hyperautomation
+    f. Machine Learning
+    g. Natural Language Processing (NLP)
+    h. Neural Networks (Deep Learning)
+    i. Vector Algebra
+
 2. Biology
 3. Computing
 4. Environmental Science
@@ -40,6 +50,14 @@ I mainly write on **Artificial Intelligence** & **Entrepreneurship** but I try n
 1. Agriculture
 2. Economics & Finance
 3. Entrepreneurship
+    a. Decision Making
+    b. Design
+    c. Growth Hacking
+    d. Opportunity Trends
+    e. Products
+    f. Software Engineering
+    g. Startup Lessons
+    
 4. Management
 5. Open Source
 
