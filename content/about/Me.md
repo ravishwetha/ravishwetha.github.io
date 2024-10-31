@@ -58,10 +58,10 @@ I mainly write on **Artificial Intelligence** & **Entrepreneurship** but I try n
 3. Transhumanism
 4. Far Future
 
-## Links
+## Socials and Links
 
-Github : https://github.com/ravishwetha \
 LinkedIn : https://www.linkedin.com/in/shwetha-ravi-57bb75108/ \
+Github : https://github.com/ravishwetha \
 Goodreads : https://www.goodreads.com/user/show/105982973-shwetha \
 YouTube : https://www.youtube.com/@schwiftyravioli \
 Coinbase Referral : https://coinbase.com/join/3NSHXHN?src=referral-link
