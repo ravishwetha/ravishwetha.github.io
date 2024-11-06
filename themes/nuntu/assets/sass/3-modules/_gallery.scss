@@ -1,0 +1,125 @@
+/* Gallery */
+.gallery-box {
+  margin: 32px -100px 32px -100px;
+
+  @media (max-width: $wide) {
+    margin: 32px -40px 32px -40px;
+  }
+
+  @media (max-width: $desktop) {
+    margin: 32px 0;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-content: center;
+  margin-left: -24px;
+  margin-bottom: -24px;
+
+  &--post {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  img {
+    margin-left: 24px;
+    margin-bottom: 24px;
+    width: calc(100% - 24px);
+  }
+
+  .gallery__image {
+    background: var(--background-color);
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: $desktop) {
+    margin-left: -16px;
+    margin-bottom: -16px;
+
+    img {
+      margin-left: 16px;
+      margin-bottom: 16px;
+      width: calc(100% - 16px);
+    }
+  }
+}
+
+/* Section Gallery */
+.section-gallery__inner {
+  position: relative;
+  padding: 0 $base-spacing-unit;
+
+  .section-gallery__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    font-family: 'Yellowtail', cursive;
+    font-size: 40px;
+    line-height: 1.25;
+    font-weight: normal;
+    color: var(--secondary-color);
+  }
+
+  .section-gallery__content {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+  
+    .section-gallery__image {
+      overflow: hidden;
+      border-radius: 22px;
+      background: var(--background-alt-color);
+      user-select: none;
+  
+      &:nth-child(odd) {
+        transform: rotate(-12deg);
+      }
+    
+      &:nth-child(even) {
+        transform: rotate(12deg);
+      }
+    }
+  }
+
+  @media (max-width: $desktop) {
+    padding: 0;
+
+    .section-gallery__title {
+      position: relative;
+      transform: translate(-50%, 0) rotate(-4deg);
+      font-size: 32px;
+    }
+
+    .section-gallery__content {
+      grid-template-columns: repeat(3, auto);
+      gap: 24px;
+
+      .section-gallery__image {
+
+        &:nth-child(odd),
+        &:nth-child(even) {
+          transform: rotate(0);
+        }
+      }
+    }
+  }
+
+  @media (max-width: $tablet) {
+    .section-gallery__content {
+      gap: 16px;
+
+      .section-gallery__image {
+        border-radius: 12px;
+      }
+    }
+  }
+}

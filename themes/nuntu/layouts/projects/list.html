@@ -1,0 +1,59 @@
+{{ define "main" }}
+
+<!-- begin page-section -->
+<section class="page-section">
+
+  <div class="container">
+    {{ if .Title }}
+      <div class="row">
+        <div class="col col-12">
+          <h1 class="page-section__title">{{ .Title }}</h1>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+
+  {{ range (where .Site.RegularPages "Section" "projects" ) }}
+    <article class="project">
+      <div class="project__content">
+        <div class="project__info">
+          <div class="container">
+            <div class="row">
+              <div class="project__info__left col col-6 col-d-12">
+                <div class="project__meta">
+                  {{ if .Params.label }}
+                    <span class="project__label">{{ .Params.label }}</span>
+                  {{ end }}
+                  <h3 class="project__title"><a href="{{ .RelPermalink }}">{{ .Params.title }}</a></h3>
+                  <p class="project__description">
+                    {{ if .Params.description }}
+                      {{ .Params.description }}
+                    {{ else }}
+                      {{ .Summary | safeHTML }}
+                    {{ end }}
+                  </p>
+                  <a href="{{ .RelPermalink }}" class="project__button">See Project <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+              </div>
+              {{ if .Params.Image }}
+                <div class="project__info__right col col-6 col-d-12">
+                  <div class="project__image">
+                    <img class="lazy" data-src="{{ .Params.Image | absURL }}" alt="{{ .Params.title }}">
+                  </div>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  {{ end }}
+
+</section>
+<!-- end page-section -->
+
+{{ partial "section-author.html" . }}
+
+{{ partial "section-gallery.html" . }}
+
+{{ end }}

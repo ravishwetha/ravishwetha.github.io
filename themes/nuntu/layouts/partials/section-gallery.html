@@ -1,0 +1,26 @@
+{{ if .Site.Params.gallery.enable }}
+<!-- begin section-gallery -->
+<section class="section section-gallery">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="section-gallery__inner">
+          {{ if .Site.Params.gallery.gallery_title }}
+            <h3 class="section-gallery__title shuffle">{{ .Site.Params.gallery.gallery_title }}</h3>
+          {{ end }}
+          {{ if .Site.Params.gallery }}
+          <div class="section-gallery__content">
+            {{ range .Site.Params.gallery_image }}
+              <div class="section-gallery__image">
+                <img src="{{ .image_url }}" alt="{{ .image_alt }}" loading="lazy">
+              </div>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section-gallery -->
+{{ end }}

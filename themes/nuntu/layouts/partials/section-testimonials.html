@@ -1,0 +1,63 @@
+{{ if .Site.Params.testimonials.enable }}
+<!-- begin testimonials -->
+<section class="section testimonials">
+  <div class="testimonials__wrap">
+    <div class="container">
+
+      {{ if .Site.Params.testimonials.testimonial_title }}
+        <div class="row">
+          <div class="col col-12">
+            <h2 class="section__title">{{ .Site.Params.testimonials.testimonial_title | safeHTML }}</h2>
+          </div>
+        </div>
+      {{ end }}
+
+      <div class="row">
+        {{ with .Site.Params.testimonial_item }}
+          {{ range . }}
+          <div class="col col-4 col-d-6 col-t-12">
+            <div class="testimonial__item">
+              <div class="testimonial__inner">
+                {{ if .content }}
+                  <p class="testimonial__text">“{{ .content }}”</p>
+                {{ end }}
+                <div class="testimonial__info">
+                  <div class="testimonial__meta">
+                    {{ if .image }}
+                      <div class="testimonial__image">
+                        <img class="testimonial__avatar lazy" data-src="{{ .image }}" alt="{{ .name }}" loading="lazy">
+                      </div>
+                    {{ end }}
+                    <div class="testimonial__content">
+                      {{ if .name }}
+                      <h3 class="testimonial__name">
+                        {{ if .link }}
+                          <a href="{{ .link }}" target="_blank" rel="noopener">{{ .name }}</a>
+                        {{ else }}
+                          {{ .name }}
+                        {{ end }}
+                      </h3>
+                      {{ end }}
+                      {{ if .designation }}
+                        <p class="testimonial__designation">{{ .designation }}</p>
+                      {{ end }}
+                    </div>
+                  </div>
+                  {{ if .icon }}
+                    <div class="testimonial__icon">
+                      <i class="{{ .icon }}" style="color: {{ .icon_color }};"></i>
+                    </div>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        {{ end }}
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- end testimonials -->
+{{ end }}

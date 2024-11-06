@@ -1,0 +1,10 @@
+/* Pagination */
+.pagination {
+  padding: 32px 0;
+  text-align: center;
+  transition: $global-transition;
+
+  &:active {
+    transform: translateY(2px) scale(0.98);
+  }
+}

@@ -1,0 +1,249 @@
+/* Hero */
+.hero {
+  margin-top: 80px;
+
+  @media (max-width: $desktop) {
+    margin-top: 0;
+  }
+}
+
+.hero__inner {
+  display: flex;
+  align-items: center;
+}
+
+.hero__left {
+  max-width: 560px;
+  margin-right: auto;
+
+  @media (max-width: $wide) {
+    max-width: 440px;
+  }
+
+  @media (max-width: $desktop) {
+    max-width: 100%;
+  }
+}
+
+.hero__intro {
+  display: flex;
+  align-items: flex-end;
+  min-height: 50px;
+  margin-bottom: 8px;
+  transform: rotate(-4deg);
+  font-family: 'Yellowtail', cursive;
+  font-size: 40px;
+  line-height: 1.25;
+  color: var(--secondary-color);
+
+  @media (max-width: $wide) {
+    font-size: 36px;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 32px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 24px;
+  font-size: 58px;
+  line-height: 1.24;
+  color: var(--heading-font-color);
+
+  @media (max-width: $wide) {
+    font-size: 48px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 36px;
+  }
+}
+
+.hero__description {
+  margin-bottom: 0;
+  font-size: 21px;
+  color: var(--text-alt-color);
+
+  @media (max-width: $wide) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: inherit;
+  }
+}
+
+.hero__subscribe {
+  margin-top: 32px;
+
+  .subscribe-form {
+    position: relative;
+    background-color: var(--background-color);
+  }
+
+  .subscribe-email {
+    width: 100%;
+    height: 64px;
+    padding: 20px 24px;
+    font-family: $heading-font-family;
+    font-size: 18px;
+    line-height: 24px;
+    border: 1px solid var(--border-color);
+    border-radius: 100px;
+    outline: 0;
+    color: var(--heading-font-color);
+    background: var(--background-alt-color);
+    transition: $global-transition;
+
+    &:focus {
+      background: var(--background-alt-color-2);
+    }
+
+    &::placeholder {
+      color: var(--text-alt-color);
+    }
+  }
+
+  .subscribe-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-size: 20px;
+  }
+
+  @media (max-width: $wide) {
+    .subscribe-email {
+      height: 62px;
+    }
+
+    .subscribe-button {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: $desktop) {
+    margin-top: 20px;
+  }
+
+  @media (max-width: $mobile) {
+    .subscribe-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .subscribe-email {
+      height: 60px;
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+
+    .subscribe-button {
+      position: relative;
+      top: 0;
+      transform: translateY(0);
+      right: 0;
+      font-size: 16px;
+    }
+  }
+}
+
+.hero__right {
+  @media (max-width: $desktop) {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 32px;
+  }
+}
+
+.hero__images {
+  .hero__images__box {
+    position: relative;
+    height: 100%;
+    padding-top: 100%;
+    border-radius: 22px;
+    background: var(--background-alt-color);
+    user-select: none;
+  }
+
+  .row {
+    min-width: 100%;
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+
+  .col {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .hero__column__one,
+  .hero__column__two,
+  .hero__column__three {
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0%;
+      right: 0%;
+      left: 0%;
+      bottom: 0%;
+      object-fit: cover;
+      border-radius: 22px;
+    }
+  }
+
+  .hero__column__two {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .hero__column__three {
+    height: 100%;
+  }
+
+  @media (max-width: $desktop) {
+    .hero__column__one {
+      height: 100%;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    .row {
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+
+    .col {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    .hero__column__one,
+    .hero__column__two,
+    .hero__column__three {
+      img {
+        border-radius: 12px;
+      }
+    }
+
+    .hero__images__box {
+      border-radius: 12px;
+    }
+
+    .hero__column__two {
+      gap: 16px;
+    }
+  }
+}

@@ -1,0 +1,119 @@
+/* Testimonials */
+.testimonial__item {
+  position: relative;
+  padding: 32px;
+  margin-bottom: 32px;
+  border: 1px solid var(--border-color);
+  border-radius: 22px;
+  transition: all cubic-bezier(0, 0, .2, 1) .2s;
+  will-change: transform;
+  overflow: hidden;
+
+  &:hover {
+    transform: scale(1.03);
+    background: var(--background-alt-color);
+  }
+
+  @media (max-width: $tablet) {
+    padding: 28px;
+    border-radius: 12px;
+  }
+}
+
+.testimonials__wrap {
+  position: relative;
+  margin-bottom: -32px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    display: block;
+    height: 180px;
+    width: 100%;
+    border-radius: 0px 0px 22px 22px;
+    background: var(--gradient);
+  }
+}
+
+.testimonial__text {
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.63;
+  color: var(--text-alt-color);
+
+  @media (max-width: $tablet) {
+    margin-bottom: 20px;
+  }
+}
+
+.testimonial__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonial__meta {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.testimonial__image {
+  position: relative;
+  min-width: 48px;
+  height: 48px;
+  margin-right: 12px;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translate(0);
+  background-color: var(--background-alt-color);
+
+  .testimonial__avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    object-fit: cover;
+  }
+}
+
+.testimonial__content {
+  line-height: 1;
+
+  .testimonial__name,
+  .testimonial__designation {
+    font-family: $heading-font-family;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: $heading-letter-spacing;
+  }
+
+  .testimonial__name {
+    margin-bottom: 4px;
+    font-weight: 500;
+
+    a {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+      }
+    }
+  }
+
+  .testimonial__designation {
+    margin-bottom: 0;
+    color: var(--text-alt-color);
+  }
+}
+
+.testimonial__icon {
+  font-size: 18px;
+}

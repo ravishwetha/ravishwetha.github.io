@@ -1,0 +1,363 @@
+/* Post + Page */
+
+// Page Section
+.page-section {
+  margin-top: 80px;
+
+  .page-section__title {
+    font-size: 58px;
+    line-height: 1.24;
+  }
+
+  @media (max-width: $wide) {
+    .page-section__title {
+      font-size: 48px;
+    }
+  }
+
+  @media (max-width: $desktop) {
+    margin-top: 0;
+  }
+
+  @media (max-width: $mobile) {
+    .page-section__title {
+      font-size: 36px;
+    }
+  }
+}
+
+.post-head,
+.page-head {
+  max-width: 780px;
+  margin: 20px auto 48px;
+
+  @media (max-width: $desktop) {
+    margin: 0 auto 32px;
+  }
+}
+
+.post-date {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-family: $heading-font-family;
+  font-size: 16px;
+  color: var(--text-alt-color);
+}
+
+.post-title,
+.page-title {
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 1.4;
+
+  @media (max-width: $desktop) {
+    font-size: 42px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 36px;
+  }
+}
+
+.post-description,
+.page-description {
+  margin-bottom: 24px;
+  color: var(--text-alt-color);
+
+  @media (max-width: $desktop) {
+    margin-bottom: 20px;
+  }
+}
+
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  .post__tag {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 8px 8px 0;
+    font-family: $heading-font-family;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 1px solid var(--border-color);
+    border-radius: 100px;
+    background: var(--background-color);
+    will-change: transform;
+
+    &:hover {
+      transform: scale(1.06);
+      background: var(--background-alt-color);
+    }
+
+    &:last-child {
+      margin: 0 0 8px 0;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    .post__tag {
+      margin: 0 6px 6px 0;
+
+      &:last-child {
+        margin: 0 0 6px 0;
+      }
+    }
+  }
+}
+
+.post-image,
+.page-image {
+  position: relative;
+  transform: translate(0);
+  padding-top: 56.25%;
+  margin-bottom: 48px;
+  min-height: 280px;
+  border-radius: 22px;
+  overflow: hidden;
+  background: var(--background-alt-color);
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+  }
+
+  @media (max-width: $desktop) {
+    padding-top: 65%;
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: $tablet) {
+    border-radius: 12px;
+  }
+}
+
+.post,
+.page {
+  max-width: 780px;
+  margin: 0 auto 60px;
+  color: var(--text-alt-color);
+
+  a {
+    font-weight: 500;
+    border-bottom: 1px solid var(--border-color);
+
+    &:hover {
+      color: var(--link-color);
+      border-bottom-color: var(--link-color-hover);
+    }
+  }
+
+  img {
+    border-radius: 22px;
+    overflow: hidden;
+
+    &.lightense-open {
+      border-radius: 0;
+    }
+  }
+
+  img[src$='#wide'] {
+    display: block;
+    width: 100vw;
+    max-width: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .button {
+    border: none;
+    text-decoration: none;
+  }
+
+  @media (max-width: $tablet) {
+    img, .js-reframe {
+      border-radius: 12px;
+    }
+  }
+}
+
+/* Share */
+.post__share {
+
+  .share__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: -4px 0;
+  }
+  
+  .share__item {
+    margin: 4px;
+    text-align: center;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .share__link {
+    display: flex;
+    align-items: center;
+    font-family: $heading-font-family;
+    font-size: 14px;
+    padding: 15px 20px;
+    line-height: 1;
+    font-weight: 500;
+    border-radius: 60px;
+    border: none;
+    text-decoration: none;
+    color: var(--heading-font-color);
+    background-color: var(--background-alt-color);
+    transition: $global-transition;
+
+    &:hover {
+      background-color: var(--background-alt-color-2);
+    }
+
+    .share-name {
+      &::before {
+        content: "";
+        position: relative;
+        top: 0;
+        display: inline-block;
+        margin: 0 8px;
+        width: 1px;
+        height: 10px;
+        opacity: 0.2;
+        background-color: var(--heading-font-color);
+      }
+    }
+  }
+
+  @media (max-width: $tablet) {
+    margin-top: 0;
+
+    .share__link {
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    .share__link {
+      font-size: 16px;
+      padding: 10px 25px;
+
+      .share-name {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Post Author */
+.post-author {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 32px 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-alt-color);
+}
+
+.post-author__info {
+  display: flex;
+  align-items: center;
+}
+
+.post-author__avatar {
+  position: relative;
+  min-width: 48px;
+  height: 48px;
+  margin-right: 16px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--background-alt-color);
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+  }
+
+  @media (max-width: $mobile) {
+    margin-right: 12px;
+  }
+}
+
+.post-author__meta {
+  display: flex;
+  flex-direction: column;
+  font-family: $heading-font-family;
+
+  .post-author__link {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: $heading-letter-spacing;
+  }
+
+  .post-author__role {
+    font-size: 16px;
+  }
+}
+
+.post-author__description {
+  margin: 16px 0 0;
+
+  @media (max-width: $mobile) {
+    margin: 12px 0 0;
+  }
+}
+
+/* Disqus */
+.show-comments {
+  margin-top: 48px;
+  text-align: center;
+
+  @media (max-width: $desktop) {
+    margin-top: 32px;
+  }
+}
+
+.post__comments {
+  max-width: 780px;
+  margin: 0 auto;
+  font-family: $heading-font-family
+}
+
+/* 404 */
+.error {
+  text-align: center;
+
+  .error__title {
+    margin-bottom: 24px;
+    font-size: 120px;
+    line-height: 1;
+  }
+
+  .error__text {
+    color: var(--text-alt-color);
+  }
+  
+  @media (max-width: $mobile) {
+    .error__title {
+      font-size: 100px;
+    }
+  }
+}

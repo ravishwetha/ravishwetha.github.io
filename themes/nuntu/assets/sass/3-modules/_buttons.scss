@@ -1,0 +1,34 @@
+/* Buttons */
+.button {
+  display: inline-block;
+  font-family: $heading-font-family;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all .2s;
+  color: var(--button-color);
+  background: var(--button-background-color);
+
+  &:hover {
+    color: var(--button-color-hover);
+    background: var(--button-background-hover);
+  }
+
+  &--primary {
+    padding: 22px 40px;
+  }
+
+  &--small {
+    padding: 12px 20px;
+  }
+
+  &--big {
+    display: block;
+    width: 100%;
+  }
+}

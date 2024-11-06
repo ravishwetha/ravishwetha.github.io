@@ -1,0 +1,27 @@
+{{ if .Site.Params.blog.enable }}
+<!-- begin blog -->
+<section class="section blog">
+
+  <div class="container">
+    {{ if .Site.Params.blog.blog_title }}
+      <div class="row">
+        <div class="col col-12">
+          <h2 class="section__title">{{ .Site.Params.blog.blog_title | safeHTML }}</h2>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+
+  <div class="blog__inner">
+    {{ $counter := 0 }}
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts" | first 3 ) }}
+    {{ range $paginator.Pages }}
+      {{ $counter = add $counter 1 }}
+      {{ partial "article.html" (dict "context" . "counter" $counter) }}
+    {{ end }}
+  </div>
+
+  <a href="/posts" class="section__button">View all <i class="fa-solid fa-arrow-right-long"></i></a>
+</section>
+<!-- end blog -->
+{{ end }}

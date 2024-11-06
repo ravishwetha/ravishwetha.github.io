@@ -1,0 +1,71 @@
+<!-- begin header -->
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="header__inner col col-12">
+
+        <div class="logo">
+          <a class="logo__link" href="{{ .Site.BaseURL }}">
+            {{ if .Site.Params.logo }}
+              <img class="logo__image" src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}" alt="{{ .Site.Title }}">
+            {{ else }}
+              {{ .Site.Title }}
+            {{ end }}
+          </a>
+        </div>
+
+        <div class="hamburger">
+          <div></div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main menu">
+          <div class="main-nav__box">
+            <ul class="nav__list list-reset">
+              {{ $currentPage := . }}
+              {{ range .Site.Menus.main }}
+              {{ $menuURL := .URL | absLangURL }}
+              {{ $pageURL:= $currentPage.Permalink | absLangURL }}
+              {{ $active := eq $menuURL $pageURL }}
+              {{ if .HasChildren }}
+                <li class="nav__item dropdown">
+                  <span class="nav__link dropdown-toggle">{{ .Name }} <i class="arrow-down fa-solid fa-chevron-down"></i></span>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-inner">
+                      {{ range .Children }}
+                      {{ $childURL := .URL | absLangURL }}
+                      {{ $active := eq $childURL $pageURL }}
+                        <a href="{{if findRE `^#` .URL}}{{if not $.IsHome}}{{site.BaseURL | relLangURL}}{{end}}{{ .URL }}{{else}}{{.URL | relLangURL}}{{end}}" class="dropdown-item{{ if $active }} active-link{{ end }}">
+                          <div class="dropdown-item__title">{{ .Name }} <i class="fa-solid fa-arrow-right-long"></i></div>
+                        </a>
+                      {{ end }}
+                    </div>
+                  </div>
+                </li>
+                {{ else }}
+                <li class="nav__item">
+                  <a href="{{if findRE `^#` .URL}}{{if not $.IsHome}}{{site.BaseURL | relLangURL}}{{end}}{{ .URL }}{{else}}{{.URL | relLangURL}}{{end}}"
+                    class="nav__link{{ if $active }} active-link{{ end }}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+              {{ end }}
+            </ul>
+          </div>
+
+          <div class="nav-button">
+            <div class="nav-search-button">
+              <i class="search-button__icon fa-solid fa-magnifying-glass"></i>
+              <span class="search-button__text">Search</span>
+            </div>
+            {{ if .Site.Params.menu.button.enable }}
+              <a href="{{ if .Site.Params.menu.button.cta_button_link }}{{ .Site.Params.menu.button.cta_button_link }}{{ else }}#{{ end }}" class="nav-cta-button button">{{ .Site.Params.menu.button.cta_button_text }}</a>
+            {{ end }}
+          </div>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+</header>
+<!-- end header -->
+
+{{ partial "search.html" . }}

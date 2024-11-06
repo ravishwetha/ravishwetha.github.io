@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+{{ partial "head.html" . }}
+
+<body class="{{ if eq .Site.Params.color_scheme "auto" }}scheme--toggle{{ else }}scheme--{{ .Site.Params.color_scheme }}{{ end }}">
+
+  {{ template "_internal/google_analytics.html" . }}
+
+  <!-- begin global wrap -->
+  <div class="global-wrap">
+    {{ partial "header.html" . }}
+
+    <!-- begin content -->
+    <main class="content" aria-label="Content">
+      {{ block "main" . }}{{ end }}
+    </main>
+    <!-- end content -->
+
+    {{ partial "footer.html" . }}
+  </div>
+  <!-- end global wrap -->
+
+  {{ partial "javascripts.html" . }}
+
+</body>
+
+</html>

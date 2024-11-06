@@ -1,0 +1,54 @@
+/* Sections */
+.section {
+  position: relative;
+  margin: 120px 0;
+
+  @media (max-width: $desktop) {
+    margin: 60px 0;
+  }
+}
+
+.section__title {
+  max-width: 460px;
+  margin-bottom: 32px;
+  font-size: 40px;
+  line-height: 1.2;
+
+  @media (max-width: $mobile) {
+    font-size: 32px;
+  }
+}
+
+.section__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 32px 0;
+  font-family: $heading-font-family;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: $heading-letter-spacing;
+  border-bottom: 1px solid var(--border-color);
+
+  &:hover {
+    background: var(--background-alt-color);
+
+    i {
+      transform: rotate(-45deg) translateX(3px);
+    }
+  }
+
+  i {
+    transform: rotate(-45deg);
+    font-size: 15px;
+    transition: $global-transition;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 24px 0;
+    font-size: 18px;
+  }
+}

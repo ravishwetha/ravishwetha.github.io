@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<!-- begin page -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="error">
+          <h2 class="error__title">404</h2>
+          <p class="error__text">The requested page could not be found.</p>
+          <p><a href="/" class="button button--primary" style="border: none">Back to the blog</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end page -->
+
+{{ partial "section-gallery.html" . }}
+
+{{ end }}

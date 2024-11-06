@@ -1,0 +1,69 @@
+{{ define "main" }}
+
+{{ if (eq .Section "tags") }}
+
+<!-- begin page-section -->
+<section class="page-section">
+
+  <div class="tag-page">
+
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <h1 class="page-section__title">{{ humanize .Title }} <span class="page-section__counter">{{ len .Pages }}</span></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      {{ $paginator := .Paginate .Data.Pages }}
+      {{ $counter := mul (sub .Paginator.PageNumber 1) $.Paginator.PageSize }}
+      {{ range $paginator.Pages }}
+        {{ $counter = add $counter 1 }}
+        {{ partial "article" (dict "context" . "counter" $counter) }}
+      {{ end }}
+    </div>
+
+  </div>
+
+</section>
+<!-- end page-section -->
+
+{{ partial "pagination.html" . }}
+
+{{ partial "section-gallery.html" . }}
+
+{{ else }}
+
+<!-- begin page-section -->
+<section class="page-section">
+
+  <div class="container">
+    {{ if .Title }}
+      <div class="row">
+        <div class="col col-12">
+          <h1 class="page-section__title">{{ .Title }}</h1>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+
+  <div class="grid">
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts" ) }}
+    {{ $counter := mul (sub .Paginator.PageNumber 1) $.Paginator.PageSize }}
+    {{ range $paginator.Pages }}
+      {{ $counter = add $counter 1 }}
+      {{ partial "article" (dict "context" . "counter" $counter) }}
+    {{ end }}
+  </div>
+
+</section>
+<!-- end page-section -->
+
+{{ partial "pagination.html" . }}
+
+{{ partial "section-gallery.html" . }}
+
+{{ end }}
+
+{{ end }}

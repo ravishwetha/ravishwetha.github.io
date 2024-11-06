@@ -1,0 +1,156 @@
+/* Projects */
+.project {
+  position: relative;
+  padding: 48px 0;
+  border-top: 1px solid var(--border-color);
+  transition: $global-transition;
+
+  &:hover {
+    background: var(--background-alt-color);
+  }
+
+  &:last-child {
+    border-bottom: 1px solid var(--border-color);
+  }
+}
+
+.project__info__left {
+  @media (max-width: $desktop) {
+    order: 1;
+  }
+}
+
+.project__info__right {
+  @media (max-width: $desktop) {
+    margin-bottom: 32px;
+  }
+}
+
+.project__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 560px;
+  height: 100%;
+  margin-right: auto;
+
+  .project__label {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size: 32px;
+    line-height: 1.3;
+    color: var(--text-alt-color);
+  }
+
+  .project__title {
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 1.4;
+
+    a {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+      }
+    }
+  }
+
+  .project__description {
+    display: -webkit-box;
+    margin-bottom: 32px;
+    font-size: 18px;
+    overflow-y: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    color: var(--text-alt-color);
+  }
+
+  .project__button {
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+    padding: 10px 20px;
+    font-family: $heading-font-family;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 100px;
+    border: 1px solid var(--border-color);
+    background: var(--background-color);
+
+    &:hover {
+      i {
+        margin-left: 4px;
+      }
+    }
+
+    i {
+      font-size: 12px;
+      transition: $global-transition;
+    }
+  }
+
+  @media (max-width: $wide) {
+    max-width: 440px;
+  }
+
+  @media (max-width: $desktop) {
+    max-width: 100%;
+  }
+
+  @media (max-width: $tablet) {
+    .project__label {
+      font-size: 28px;
+    }
+
+    .project__title {
+      font-size: 32px;
+    }
+
+    .project__description {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    .project__label {
+      font-size: 24px;
+    }
+
+    .project__title {
+      font-size: 28px;
+    }
+
+    .project__description {
+      font-size: inherit;
+    }
+  }
+}
+
+.project__image {
+  position: relative;
+  transform: translate(0);
+  border-radius: 22px;
+  padding-bottom: 75%;
+  overflow: hidden;
+  background: var(--background-alt-color);
+  user-select: none;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: $tablet) {
+    border-radius: 12px;
+  }
+}

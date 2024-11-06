@@ -1,0 +1,105 @@
+{{ define "main" }}
+
+{{ if or (eq .Section "post") (eq .Section "posts") }}
+
+<!-- begin post -->
+<div class="container">
+
+  <div class="post-head">
+    <div class="post-meta">
+      <time class="post-date" datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2 January 2006" }}</time>
+      <h1 class="post-title">{{ .Title }}</h1>
+      {{ if .Params.description }}
+        <p class="post-description">{{ .Params.description }}</p>
+      {{ end }}
+    </div>
+
+    <div class="post-tags">
+      {{ range ($.GetTerms "tags") }}
+        <a href="{{ .Permalink }}" class="post__tag">{{ .LinkTitle }}</a>
+      {{ end }}
+    </div>
+  </div>
+
+  {{ if .Params.image }}
+    <div class="post-image">
+      <img class="lazy" data-src="{{ .Params.Image | absURL }}" alt="{{ .Title }}">
+    </div>
+  {{ end }}
+
+  <article class="post">
+  
+    <div class="post__content">
+      {{ .Content }}
+    </div>
+  
+    {{ partial "share-buttons.html" . }}
+  
+  </article>
+
+  <div class="post-author">
+    <div class="post-author__info">
+      {{ if .Site.Params.author.author_avatar }}
+        <a href="/about/" class="post-author__avatar">
+          <img class="lazy" data-src="{{ .Site.Params.author.author_avatar }}" alt="{{ .Site.Params.author.author_name }}">
+        </a>
+      {{ end }}
+      <div class="post-author__meta">
+        {{ if .Site.Params.author.author_name }}
+          <a href="/about/" class="post-author__link">{{ .Site.Params.author.author_name }}</a>
+        {{ end }}
+        {{ if .Site.Params.author.author_role }}
+          <span class="post-author__role">{{ .Site.Params.author.author_role }}</span>
+        {{ end }}
+      </div>
+    </div>
+    {{ if .Site.Params.author.author_description }}
+      <p class="post-author__description">{{ .Site.Params.author.author_description }}</p>
+    {{ end }}
+  </div>
+
+  {{ if .Site.Params.disqus.disqusShortname }}
+    {{ partial "disqus-comments.html" . }}
+  {{ end }}
+
+</div>
+<!-- end post -->
+
+{{ partial "related-posts.html" . }}
+
+{{ partial "section-gallery.html" . }}
+
+{{ else }}
+
+<!-- begin page -->
+<div class="container">
+
+  <div class="page-head">
+    <div class="page-meta">
+      <h1 class="page-title">{{ .Title }}</h1>
+        {{ if .Description }}
+          <p class="page-description">{{ .Description }}</p>
+        {{ end }}
+    </div>
+  </div>
+
+  {{ if .Params.image }}
+    <div class="page-image">
+      <img class="lazy" data-src="{{ .Params.Image | absURL }}" alt="{{ .Title }}">
+    </div>
+  {{ end }}
+
+  <article class="page">
+    <div class="page__content">
+      {{ .Content }}
+    </div>
+  </article>
+
+</div>
+<!-- end page -->
+
+{{ partial "section-gallery.html" . }}
+
+{{ end }}
+
+{{ end }}

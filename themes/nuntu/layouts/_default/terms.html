@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<!-- begin tags -->
+<section class="section section-tags">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="section-tags__inner">
+          <h2 class="section-tags__title">{{ humanize .Title }}</h2>
+          <div class="section-tags__box">
+            {{ range .Pages }}
+              <a href="{{ .Permalink }}" class="section-tags__name">{{ .Title }}</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end tags -->
+
+{{ partial "section-gallery.html" . }}
+
+{{ end }}

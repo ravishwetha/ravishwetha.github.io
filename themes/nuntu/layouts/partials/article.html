@@ -1,0 +1,38 @@
+<div class="article grid__article">
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="article__inner">
+
+          <div class="article__meta">
+            <time class="article__date" datetime="{{ .context.Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .context.Date.Format "2 January 2006" }}</time>
+          </div>
+
+          <div class="article__content">
+            <span class="article__count">({{ .counter }})</span>
+
+            <div class="article__info">
+              <h2 class="article__title">
+                <a href="{{ .context.RelPermalink }}">{{ .context.Title }}</a>
+              </h2>
+
+              {{ if .context.Params.tags }}
+              <div class="article-tags__box">
+                {{ range (.context.GetTerms "tags") }}
+                  <a href="{{ .Permalink }}" class="article__tag">{{ .LinkTitle }}</a>
+                {{ end }}
+              </div>
+              {{ end }}
+
+            </div>
+          </div>
+
+          <a href="{{ .context.RelPermalink }}" class="article__button">Read Post <i class="fa-solid fa-arrow-right-long"></i></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
