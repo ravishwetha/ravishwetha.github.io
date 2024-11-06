@@ -58,7 +58,6 @@ jobs:
         run: |
           cd themes/nuntu
           hugo \
-            --disableFastRender \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
