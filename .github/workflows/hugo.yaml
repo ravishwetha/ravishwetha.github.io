@@ -57,7 +57,7 @@ jobs:
           TZ: America/Los_Angeles
         run: |
           cd themes/nuntu
-          hugo server \
+          hugo \
             --disableFastRender \
             --gc \
             --minify \
