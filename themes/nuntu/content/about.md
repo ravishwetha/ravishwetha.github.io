@@ -1,44 +1,64 @@
----
-title: About Me
-description: My design philosophy revolves around the principles of user-centricity and empathy. I firmly believe that understanding the needs, behaviors, and aspirations of users is the key to creating products that truly resonate with them. By placing the end-users at the heart of my design process, I strive to build solutions that address real-world challenges and spark meaningful connections.
-image: '/images/01-2.jpg'
----
+I mainly write about **Artificial Intelligence** & **Entrepreneurship** but I try not limit myself. In my personal notes I cover all of the following topics and hope to compile them into coherent posts:
 
-Hello there! Welcome to my corner of the digital world. My name is Jesse, and I am a passionate Product Designer with a flair for crafting exceptional user experiences. I believe that design is not just about aesthetics but a powerful tool to make a positive impact on people's lives.
+## Reality Level 0 - Math, Science & Nature
 
-## Curiosity and Creativity
+1. **Artificial Intelligence**
+2. Biology
+3. Computing
+4. Environmental Science
+5. Mathematics
+6. Physics
 
-Curiosity drives me to explore the uncharted territories of design. I love pushing the boundaries and venturing into new design paradigms. As a perpetual learner, I stay updated with the latest industry trends, emerging technologies, and design methodologies, incorporating them into my work to deliver innovative and cutting-edge solutions.
+## Reality Level 1 - Mind & Body
 
-![Workflow](/images/01-3.jpg)
-*Photo by [Faizur Rehman](https://unsplash.com/photos/JpPBhhLFRRc) on [Unsplash](https://unsplash.com/)*
+1. Health
+2. Learning Systems
+3. Philosophy
+4. Psychology
+5. Personal Productivity
 
-As a Product Designer, I see design challenges as exciting opportunities to find elegant solutions. I enjoy breaking down complex problems into manageable components, collaborating with cross-functional teams, and iterating through multiple design cycles to arrive at the most effective and user-friendly outcomes.
+## Reality Level 2 - Socialisation & Relationships
 
-Beyond just aesthetics, I am deeply committed to designing for impact. Whether it's improving daily routines, enhancing productivity, or fostering connections, I strive to leave a lasting impression on users' lives through my creations.
+1. Communication
+2. Relationships
+3. Status Games
 
-<div class="gallery-box">
-  <div class="gallery">
-    <img src="/images/101.jpg" alt="workflow" loading="lazy">
-    <img src="/images/102.jpg" alt="workflow" loading="lazy">
-    <img src="/images/103.jpg" alt="workflow" loading="lazy">
-    <img src="/images/104.jpg" alt="workflow" loading="lazy">
-    <img src="/images/105.jpg" alt="workflow" loading="lazy">
-    <img src="/images/106.jpg" alt="workflow" loading="lazy">
-  </div>
-  <em>Gallery / <a href="https://unsplash.com/" target="_blank">Unsplash</a></em>
-</div>
+## Reality Level 3 - Art & Culture
 
-I am a firm believer in giving back to the design community that has nurtured and supported me. I volunteer my time to mentor aspiring designers, participate in design forums, and contribute to open-source projects. Sharing knowledge and collaborating with fellow designers brings a sense of fulfillment and camaraderie.
+1. Creativity
+2. Entertainment
+3. Literature
+4. Music
+5. Painting
+6. Theatre
 
-## Collaboration and Communication
+## Reality Level 4 - Business, Industry & Technology
 
-Design has been an incredible journey of growth and self-discovery for me. I am deeply grateful for every opportunity that has come my way, every challenge that has shaped my skills, and every success that has inspired me to aim higher. With humility and enthusiasm, I look forward to the next chapter in my design adventure.
+1. Agriculture
+2. Economics & Finance
+3. [**Entrepreneurship**](http://localhost:1313/tags/entrepreneurship/)
+4. Management
+5. Open Source
 
-> To design is to communicate clearly by whatever means you can control or master.
->
-> <cite>- Milton Glaser</cite>
+## Reality Level 5 - History, Politics, Economics & Law
 
-I firmly believe that great design is a result of effective collaboration and communication. I enjoy working closely with stakeholders, developers, and fellow designers to align visions, share ideas, and collectively bring projects to life.
+1. History
+2. Governance
+3. Journalism
+4. Law
+6. Sociology
 
-***
+## Reality Level 6 - Evolving Future
+
+1. Current Challenges
+2. Space Exploration
+3. Transhumanism
+4. Far Future
+
+## Socials and Links
+
+LinkedIn : https://www.linkedin.com/in/shwetha-ravi-57bb75108/ \
+Github : https://github.com/ravishwetha \
+Goodreads : https://www.goodreads.com/user/show/105982973-shwetha \
+YouTube : https://www.youtube.com/@schwiftyravioli \
+Coinbase Referral : https://coinbase.com/join/3NSHXHN?src=referral-link

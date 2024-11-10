@@ -1,88 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Nuntu</title>
+    <title>Tags on SR Blog</title>
     <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on Nuntu</description>
+    <description>Recent content in Tags on SR Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Jul 2023 15:01:35 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 06 Dec 2022 01:24:12 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Design</title>
-      <link>http://localhost:1313/tags/design/</link>
-      <pubDate>Thu, 20 Jul 2023 15:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/tags/design/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Work</title>
-      <link>http://localhost:1313/tags/work/</link>
-      <pubDate>Thu, 20 Jul 2023 15:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/tags/work/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Trends</title>
-      <link>http://localhost:1313/tags/trends/</link>
-      <pubDate>Fri, 12 May 2023 15:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/tags/trends/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>UI</title>
-      <link>http://localhost:1313/tags/ui/</link>
-      <pubDate>Fri, 12 May 2023 15:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/tags/ui/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Research</title>
-      <link>http://localhost:1313/tags/research/</link>
-      <pubDate>Wed, 10 May 2023 15:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/tags/research/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Development</title>
-      <link>http://localhost:1313/tags/development/</link>
-      <pubDate>Tue, 09 May 2023 15:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/tags/development/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mobile</title>
-      <link>http://localhost:1313/tags/mobile/</link>
-      <pubDate>Tue, 09 May 2023 15:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/tags/mobile/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Wireframes</title>
-      <link>http://localhost:1313/tags/wireframes/</link>
-      <pubDate>Tue, 09 May 2023 15:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/tags/wireframes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Games</title>
-      <link>http://localhost:1313/tags/games/</link>
-      <pubDate>Fri, 05 May 2023 15:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/tags/games/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Story</title>
-      <link>http://localhost:1313/tags/story/</link>
-      <pubDate>Fri, 05 May 2023 15:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/tags/story/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Workflow</title>
-      <link>http://localhost:1313/tags/workflow/</link>
-      <pubDate>Fri, 05 May 2023 15:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/tags/workflow/</guid>
+      <title>Entrepreneurship</title>
+      <link>http://localhost:1313/tags/entrepreneurship/</link>
+      <pubDate>Tue, 06 Dec 2022 01:24:12 +0800</pubDate>
+      <guid>http://localhost:1313/tags/entrepreneurship/</guid>
       <description></description>
     </item>
   </channel>

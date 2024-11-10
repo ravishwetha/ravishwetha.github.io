@@ -1,47 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Writing on Nuntu</title>
+    <title>Posts on SR Blog</title>
     <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Writing on Nuntu</description>
+    <description>Recent content in Posts on SR Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Jul 2023 15:01:35 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 06 Dec 2022 01:24:12 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Forging User Connections through Empathy</title>
-      <link>http://localhost:1313/posts/forging-user-connections-through-empathy/</link>
-      <pubDate>Thu, 20 Jul 2023 15:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/posts/forging-user-connections-through-empathy/</guid>
-      <description>&lt;p&gt;The process of creating a user interface starts with in-depth analysis of user needs and competitor research. Understanding user behavioral patterns and preferences plays a crucial role in developing design concepts.&lt;/p&gt;&#xA;&lt;h2 id=&#34;iterative-design-in-action&#34;&gt;Iterative Design in Action&lt;/h2&gt;&#xA;&lt;p&gt;Effective design goes beyond visual aspects. It extends to information architecture, content organization, and microinteractions. Attention to detail is the key to creating a comprehensive user experience that retains users and engages them in actions. We will provide practical tips on optimizing user interfaces and enhancing usability.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Understanding User Behavior in UX Design</title>
-      <link>http://localhost:1313/posts/understanding-user-behavior-in-ux-design/</link>
-      <pubDate>Fri, 12 May 2023 15:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/posts/understanding-user-behavior-in-ux-design/</guid>
-      <description>&lt;p&gt;The process of creating a user interface starts with in-depth analysis of user needs and competitor research. Understanding user behavioral patterns and preferences plays a crucial role in developing design concepts.&lt;/p&gt;&#xA;&lt;h2 id=&#34;iterative-design-in-action&#34;&gt;Iterative Design in Action&lt;/h2&gt;&#xA;&lt;p&gt;Effective design goes beyond visual aspects. It extends to information architecture, content organization, and microinteractions. Attention to detail is the key to creating a comprehensive user experience that retains users and engages them in actions. We will provide practical tips on optimizing user interfaces and enhancing usability.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Unveiling the Power of Microinteractions</title>
-      <link>http://localhost:1313/posts/unveiling-the-power-of-microinteractions/</link>
-      <pubDate>Wed, 10 May 2023 15:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/posts/unveiling-the-power-of-microinteractions/</guid>
-      <description>&lt;p&gt;The process of creating a user interface starts with in-depth analysis of user needs and competitor research. Understanding user behavioral patterns and preferences plays a crucial role in developing design concepts.&lt;/p&gt;&#xA;&lt;h2 id=&#34;iterative-design-in-action&#34;&gt;Iterative Design in Action&lt;/h2&gt;&#xA;&lt;p&gt;Effective design goes beyond visual aspects. It extends to information architecture, content organization, and microinteractions. Attention to detail is the key to creating a comprehensive user experience that retains users and engages them in actions. We will provide practical tips on optimizing user interfaces and enhancing usability.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Crafting Unforgettable User Experiences Through Design</title>
-      <link>http://localhost:1313/posts/crafting-unforgettable-user-experiences-through-design/</link>
-      <pubDate>Tue, 09 May 2023 15:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/posts/crafting-unforgettable-user-experiences-through-design/</guid>
-      <description>&lt;p&gt;The process of creating a user interface starts with in-depth analysis of user needs and competitor research. Understanding user behavioral patterns and preferences plays a crucial role in developing design concepts.&lt;/p&gt;&#xA;&lt;h2 id=&#34;iterative-design-in-action&#34;&gt;Iterative Design in Action&lt;/h2&gt;&#xA;&lt;p&gt;Effective design goes beyond visual aspects. It extends to information architecture, content organization, and microinteractions. Attention to detail is the key to creating a comprehensive user experience that retains users and engages them in actions. We will provide practical tips on optimizing user interfaces and enhancing usability.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Evolving Landscape of Product Design</title>
-      <link>http://localhost:1313/posts/the-evolving-landscape-of-product-design/</link>
-      <pubDate>Fri, 05 May 2023 15:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/posts/the-evolving-landscape-of-product-design/</guid>
-      <description>&lt;p&gt;The process of creating a user interface starts with in-depth analysis of user needs and competitor research. Understanding user behavioral patterns and preferences plays a crucial role in developing design concepts.&lt;/p&gt;&#xA;&lt;h2 id=&#34;iterative-design-in-action&#34;&gt;Iterative Design in Action&lt;/h2&gt;&#xA;&lt;p&gt;Effective design goes beyond visual aspects. It extends to information architecture, content organization, and microinteractions. Attention to detail is the key to creating a comprehensive user experience that retains users and engages them in actions. We will provide practical tips on optimizing user interfaces and enhancing usability.&lt;/p&gt;</description>
+      <title>24 Steps for Startup Sanity</title>
+      <link>http://localhost:1313/posts/2022-12-06-24-steps-for-startup-sanity/</link>
+      <pubDate>Tue, 06 Dec 2022 01:24:12 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2022-12-06-24-steps-for-startup-sanity/</guid>
+      <description>&lt;p&gt;It has been a year of reflections for me and I would like to think I&amp;rsquo;ve made every mistake in the book during my role as a Co-founder &amp;amp; CTO at Learnseeker for almost 5 years. I&amp;rsquo;ve decided to write a guide to myself if I ever wanted to go through this crazy journey again:&lt;/p&gt;&#xA;&lt;p&gt;&amp;hellip; Read More on LinkedIn: &lt;a href=&#34;https://www.linkedin.com/pulse/24-steps-startup-sanity-shwetha-ravi/?trackingId=ojJT2qefT9WYe8Wcl%2FcqUw%3D%3D&#34;&gt;24 Steps for Startup Sanity&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

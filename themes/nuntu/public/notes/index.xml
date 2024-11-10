@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on SR Blog</title>
+    <link>http://localhost:1313/notes/</link>
+    <description>Recent content in Notes on SR Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Oct 2024 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Facebook AI Chief Yann LeCun&#39;s cake analogy</title>
+      <link>http://localhost:1313/notes/202410030141---facebook-ai-chief-yann-lecuns-cake-analogy/</link>
+      <pubDate>Wed, 02 Oct 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/notes/202410030141---facebook-ai-chief-yann-lecuns-cake-analogy/</guid>
+      <description>&lt;p&gt;Facebook AI Chief Yann Lecun introduced his now-famous “cake analogy” at NIPS 2016: “If intelligence is a cake, the bulk of the cake is unsupervised learning, the icing on the cake is supervised learning, and the cherry on the cake is reinforcement learning (RL).” The quip rippled across the AI community and confirmed LeCun a strong advocate of unsupervised learning, a machine learning technique that finds patterns in unlabeled data.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

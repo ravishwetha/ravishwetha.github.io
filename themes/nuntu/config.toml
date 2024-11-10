@@ -2,24 +2,24 @@
 # General Site Settings
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Nuntu"
+title = "SR Blog"
 googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 paginate = 4
 
 
 [params]
-  logo = "" # You can add own logo. For example "/images/logo.png".
+  logo = ""
   description = "An impressive portfolio Hugo theme"
   color_scheme = "auto" # You have the option to choose between three modes: auto, light, and dark. The default mode is set to auto, which means that the color scheme will automatically adapt based on your operating system settings. This way, you can enjoy a personalized experience without having to manually switch between light and dark modes.
 
 
   #-------------------------------
   # Author Global Settings
-  [params.author]
-    author_name = "Jesse Parker"
-    author_role = "Product Designer"
-    author_description = "When I'm not a Product Designer, I can often be found cycling through picturesque landscapes, immersing myself in the joy of two-wheeled adventures. Reading books is another passion of mine, as I love delving into captivating stories and exploring new ideas. Beyond these pursuits, I relish engaging in various activities that nurture my creativity and keep me inspired."
-    author_avatar = "/images/01-1.jpg"
+  # [params.author]
+    # author_name = "Shwetha Ravi"
+    # author_role = "AI Engineer"
+    # author_description = ""
+    # author_avatar = ""
 
 
 #-------------------------------
@@ -32,40 +32,19 @@ paginate = 4
     weight = 1
 
   [[menu.main]]
-    identifier = "projects"
-    name = "Projects"
-    url = "/projects/"
+    identifier = "about"
+    name = "About"
+    url = "/about/"
     weight = 2
 
   [[menu.main]]
     identifier = "blog"
-    name = "Blog"
+    name = "Posts"
     url = "/posts/"
-    weight = 3
-    hasChildren = true
-
-      [[menu.main]]
-      parent = "Pages"
-      name = "About"
-      url = "/about/"
-      weight = 1
-
-      [[menu.main]]
-      parent = "Pages"
-      name = "Contact"
-      url = "/contact/"
-      weight = 2
-
-      [[menu.main]]
-      parent = "Pages"
-      name = "Elements"
-      url = "/elements/"
-      weight = 3
-
 
   # Call to action button
   [params.menu.button]
-    enable = true
+    enable = false
     cta_button_link = "/contact/"
     cta_button_text = "Get in touch"
 
@@ -74,75 +53,68 @@ paginate = 4
   # Hero Settings
   [params.hero]
     enable = true
-    hero_intro = "Hey, I’m Jesse"
-    hero_title = "I turning Ideas into Reality on the Fly!"
-    hero_description = "I'm a passionate product designer, and I thrive on creating intuitive and delightful interactions that shape the future of technology. Join me as we explore the evolving landscape of user experience and how design can seamlessly integrate with the latest technological advancements."
+    hero_intro = ""
+    hero_title = ""
+    hero_description = "I'm Shwetha Ravi & currently working as an AI Engineer at a bank in Singapore. I was Co-founder & CTO of Learnseeker, a seed funded AI Edtech Startup for about 5 years (2017-2022). I mainly write about Artificial Intelligence & Entrepreneurship but I try not to limit myself."
 
   [params.hero_image_1]
     image_alt = "Hobby"
-    image_url = "/images/hero-1.jpg"
+    image_url = "/images/hero-1-climbing.png"
 
-  [params.hero_image_2]
-    image_alt = "Apartment"
-    image_url = "/images/hero-2.jpg"
+  # [params.hero_image_2]
+  #  image_alt = "Apartment"
+  #  image_url = "/images/hero-2.jpg"
 
-  [params.hero_image_3]
-    image_alt = "Friends"
-    image_url = "/images/hero-3.jpg"
+  # [params.hero_image_3]
+  #  image_alt = "Friends"
+  #  image_url = "/images/hero-3.jpg"
 
-  [params.hero_image_4]
-    image_alt = "Workflow"
-    image_url = "/images/hero-4.jpg"
+  # [params.hero_image_4]
+  #  image_alt = "Workflow"
+  #  image_url = "/images/hero-4.jpg"
 
 
   #-------------------------------
   # Newsletter Settings
   [params.mailchimp]
-    enable = true
+    # enable = true
     mailchimp_identifier = "gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp" # Add your MailChimp form identifier. For example - gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp
     mailchimp_input_text = "Your email address"
     mailchimp_button_text = "Subscribe" # Add your button text
 
 
   #-------------------------------
-  # Projects Settings
-  [params.projects]
-    enable = true
-    projects_title= "Works"
-
-
-  #-------------------------------
   # Testimonials Section
-  [params.testimonials]
-    enable = true
-    testimonial_title = "See what our customers are saying"
+  # [params.testimonials]
+  #  enable = true
+  #  testimonial_title = "See what our customers are saying"
 
-  [[params.testimonial_item]]
-    name = "Lucas Parker"
-    image = "/images/client-1.jpg"
-    designation = "Web Developer"
-    content = "If you're looking for a top-notch product designer, look no further. His ability to merge creativity with functionality is remarkable."
-    link = "https://twitter.com/"
-    icon = "fa-brands fa-twitter"
-    icon_color = "#1da1f3"
+  # [[params.testimonial_item]]
+  #  name = "Lucas Parker"
+  #  image = "/images/client-1.jpg"
+  #  designation = "Web Developer"
+  #  content = "If you're looking for a top-notch product designer, look no further. His ability to merge creativity with functionality is remarkable."
+  #  link = "https://twitter.com/"
+  #  icon = "fa-brands fa-twitter"
+  #  icon_color = "#1da1f3"
 
-  [[params.testimonial_item]]
-    name = "Olivia Williams"
-    image = "/images/client-2.jpg"
-    designation = "Data Analyst"
-    content = "His attention to every minute detail ensured that our products stand out, capturing the attention of potential customers."
-    link = "https://twitter.com/"
-    icon = "fa-brands fa-twitter"
-    icon_color = "#1da1f3"
+  # [[params.testimonial_item]]
+  #  name = "Olivia Williams"
+  #  image = "/images/client-2.jpg"
+  #  designation = "Data Analyst"
+  #  content = "His attention to every minute detail ensured that our products stand out, capturing the attention of potential customers."
+  #  link = "https://twitter.com/"
+  #  icon = "fa-brands fa-twitter"
+  #  icon_color = "#1da1f3"
 
-  [[params.testimonial_item]]
-    name = "Ava Martinez"
-    image = "/images/client-3.jpg"
-    designation = "Designer"
-    content = "The designer brought fresh ideas and innovative solutions to our project, delivering results that exceeded our expectations."
-    link = "https://twitter.com/"
-    icon = "fa-brands fa-twitter"
-    icon_color = "#1da1f3"
+  # [[params.testimonial_item]]
+  #  name = "Ava Martinez"
+  #  image = "/images/client-3.jpg"
+  #  designation = "Designer"
+  #  content = "The designer brought fresh ideas and innovative solutions to our project, delivering results that exceeded our expectations."
+  #  link = "https://twitter.com/"
+  #  icon = "fa-brands fa-twitter"
+  #  icon_color = "#1da1f3"
 
   [[params.testimonial_item]]
     name = "Evelyn Turner"
@@ -203,13 +175,19 @@ paginate = 4
   # Blog Section
   [params.blog]
     enable = true
-    blog_title = "Writing"
+    blog_title = "Posts"
+
+  #-------------------------------
+  # Projects Settings
+  [params.projects]
+    # enable = true
+    projects_title= "Notes"
 
 
   #-------------------------------
   # Author Section Settings
   [params.author_section]
-    enable = true
+  #  enable = true
     author_section_role = "Product Designer"
     author_section_title = "What do I say about myself?"
     author_section_description = "When I'm not a Product Designer, I can often be found cycling through picturesque landscapes, immersing myself in the joy of two-wheeled adventures. Reading books is another passion of mine, as I love delving into captivating stories and exploring new ideas. Beyond these pursuits, I relish engaging in various activities that nurture my creativity and keep me inspired."
@@ -222,13 +200,13 @@ paginate = 4
   # Tags Section Settings
   [params.tags_section]
     enable = true
-    tags_section_title = "Explore our topics"
+    tags_section_title = "Topics"
 
 
   #-------------------------------
   # Gallery Section Settings
   [params.gallery]
-    enable = true
+  #  enable = true
     gallery_title = "The Best Moments"
 
   [[params.gallery_image]]
@@ -258,39 +236,33 @@ paginate = 4
 
   #-------------------------------
   # Social Links
-  [[params.social]]
-    icon = "fa-brands fa-x-twitter"
-    name = "Twitter"
-    link = "https://twitter.com"
-
-  [[params.social]]
-    icon = "fa-brands fa-facebook-f"
-    name = "Facebook"
-    link = "https://facebook.com"
-
-  [[params.social]]
-    icon = "fa-brands fa-instagram"
-    name = "Instagram"
-    link = "https://instagram.com"
-
-  [[params.social]]
-    icon = "fa-brands fa-pinterest"
-    name = "Pinterest"
-    link = "https://pinterest.com"
-
-  [[params.social]]
-    icon = "fa-brands fa-dribbble"
-    name = "Dribbble"
-    link = "https://dribbble.com"
-
   # Example of adding a new link to the footer:
-  # [[params.social]]
-  #   icon = "fa-brands fa-youtube"
-  #   name = "Youtube"
-  #   link = "https://youtube.com"
+  [[params.social]]
+    icon = "fa-brands fa-linkedin"
+    name = "LinkedIn"
+    link = "https://www.linkedin.com/in/shwetha-ravi-57bb75108/"
+
+  [[params.social]]
+    icon = "fa-brands fa-github"
+    name = "Github"
+    link = "https://github.com/ravishwetha"
+
+  [[params.social]]
+    icon = "fa-brands fa-goodreads"
+    name = "Goodreads"
+    link = "https://www.goodreads.com/user/show/105982973-shwetha"
+
+  [[params.social]]
+    icon = "fa-brands fa-youtube"
+    name = "Youtube"
+    link = "https://www.youtube.com/@schwiftyravioli"
+
+  [[params.social]]
+    icon = "fa-brands fa-btc"
+    name = "Coinbase"
+    link = "https://coinbase.com/join/3NSHXHN?src=referral-link"
 
   # Other icons can be found at https://fontawesome.com/icons
-
 
   #-------------------------------
   # Contact Settings
