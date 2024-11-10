@@ -36,7 +36,7 @@ I mainly write about **Artificial Intelligence** & **Entrepreneurship** but I tr
 
 1. Agriculture
 2. Economics & Finance
-3. [**Entrepreneurship**](http://localhost:1313/tags/entrepreneurship/)
+3. [**Entrepreneurship**](https://blog.shwetharavi.org/tags/entrepreneurship/)
 4. Management
 5. Open Source
 
