@@ -1,6 +1,6 @@
 ---
 title: 24 Steps for Startup Sanity
-description: Design and user experience are critical factors in creating successful interactions with the target audience. Unique and intuitive interfaces, designed with user needs in mind, can leave a positive impression and satisfy their expectations.
+description:
 date: 2022-12-06 01:24:12 +08:00
 image: '/images/2022-12-06-24-steps-for-startup-sanity-1.jpg'
 tags: [Entrepreneurship]
